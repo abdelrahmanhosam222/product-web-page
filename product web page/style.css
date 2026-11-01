@@ -1,0 +1,287 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17211f;
+    background: white;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    background: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    float: left;
+    color: #1f6b55;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    float: right;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #1f6b55;
+}
+
+.hero {
+    background: #f6f7f2;
+    padding: 70px 0;
+}
+
+.hero-text {
+    float: left;
+    width: 50%;
+    padding-top: 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero-text p {
+    color: #697773;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.old-price {
+    color: gray;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    background: #1f6b55;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #174c3e;
+}
+
+.hero-image {
+    float: right;
+    width: 45%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 390px;
+    object-fit: contain;
+}
+section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #697773;
+}
+.feature {
+    float: left;
+    width: 31%;
+    margin: 1%;
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    min-height: 190px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    color: #1f6b55;
+}
+
+.feature p {
+    color: #697773;
+}
+
+.feature-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.reviews {
+    background: #f6f7f2;
+}
+
+.review-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.profile {
+    float: left;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.stars {
+    color: orange;
+    font-size: 20px;
+}
+
+.review-box p {
+    color: #697773;
+    margin-top: 20px;
+}
+.product {
+    float: left;
+    width: 31%;
+    margin: 1%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: #697773;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #1f6b55;
+    font-weight: bold;
+}
+
+footer {
+    background: #14251f;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-info {
+    float: left;
+    width: 60%;
+}
+
+.payment {
+    float: right;
+    text-align: right;
+}
+
+.payment img {
+    width: 65px;
+    height: 35px;
+    object-fit: contain;
+    background: white;
+    padding: 4px;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+    border-top: 1px solid #45554f;
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+
+    .logo, .nav-links {
+        float: none;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-links a {
+        margin: 8px;
+    }
+
+    .hero-text, .hero-image {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image img {
+        height: 270px;
+    }
+
+    .feature, .product {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .footer-info, .payment {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
